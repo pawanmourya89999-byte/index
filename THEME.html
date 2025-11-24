@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button class="dm">dark mode</button>
+    <button class="lm">light mode</button>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            $(".dm").click(function(){
+                $("body").css({
+                    backgroundColor: "black"
+                })
+                $(".box").css({
+                    backgroundColor: "white"
+                })
+                $("button").css({
+                    backgroundColor: "yellow"
+                })
+            })
+            $(".lm").click(function(){
+                $("body").css({
+                    backgroundColor: "white"
+                })
+                $(".box").css({
+                    backgroundColor: "black"
+                })
+                $("button").css({
+                    backgroundColor: "red"
+                })
+            })
+        })
+    </script>
+</body>
+</html>
